@@ -1,0 +1,29 @@
+.social {
+  margin-bottom: 42px;
+
+}
+
+.social__link {
+  text-decoration: none;
+  margin-right: 10px;
+  display: inline-block;
+
+  transition: transform 0.2s linear;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  @media (max-width: $mobile){
+    margin-right: 3px;
+
+  }
+
+  img {
+    @media (max-width: $mobile){
+      width: 37px;
+
+    }
+
+  }
+}

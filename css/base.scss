@@ -1,0 +1,69 @@
+@import "myVars";
+
+
+html {
+  font-size: 15px;
+
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+
+  height: 100%;
+  min-height: 100%;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* Vendor */
+@import "vendor/_slick";
+
+/* Blocks*/
+@import "blocks/_conteiner";
+@import "blocks/_header";
+@import "blocks/_user";
+@import "blocks/_nav";
+@import "blocks/_intro";
+@import "blocks/_social";
+@import "blocks/_btn";
+@import "blocks/_works";
+@import "blocks/_portfolio";
+@import "blocks/_work";
+@import "blocks/_aboutme";
+@import "blocks/_reviews";
+@import "blocks/_news";
+@import "blocks/_articles";
+@import "blocks/_footer";
+@import "blocks/_modal";
+@import "blocks/_modal-work";
+@import "blocks/_timeline";
+@import "blocks/_progress-bar";
+@import "blocks/_contact";
+@import "blocks/_form";
+@import "blocks/_burger";
+
+/* Helpers*/
+@import "blocks/_helpers";
+
+
+
+

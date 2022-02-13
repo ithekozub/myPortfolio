@@ -1,0 +1,121 @@
+.aboutme {
+  margin: 8.4rem 0;
+
+  @media (max-width: $tablet){
+    margin: 4rem 0;
+
+  }
+
+}
+
+.aboutme__inner {
+  display: flex;
+  max-width: 1090px;
+
+}
+
+.aboutme__photo,
+.aboutme__content {
+  width: 50%;
+}
+
+.aboutme__content {
+  padding-left: 3.2rem;
+  margin-bottom: 2rem;
+
+  @media (max-width: $mobile_sm){
+    width: 100%;
+    padding-left: 0;
+  }
+
+}
+
+.aboutme__photo {
+  position: relative;
+
+  img {
+    width: min(609, 50.75vw);
+    height: auto;
+
+    position: relative;
+    z-index: 2;
+
+    @media (max-width: $notebook){
+      bottom: 0;
+
+    }
+  }
+
+  &:before {
+    content: "";
+    width: min(412px, 34.333vw);
+    height: min(412px, 34.333vw);
+    background-color: #EFEFEF;
+
+    position: absolute;
+    left: 1rem;
+    top: min(19.8vw, 197px);
+    z-index: 1;
+
+
+
+
+
+  }
+
+  @media (max-width: $mobile_sm){
+    display: none;
+  }
+
+
+}
+
+.aboutme__title {
+  font-size: 3rem;
+  color: $base-color;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media (max-width: $mobile){
+    font-size: 2.4rem;
+
+  }
+
+}
+
+.aboutme__bigtitle {
+  margin-bottom: 1.4rem;
+  position: relative;
+  left: -10px;
+  font-size: 6.1rem;
+  line-height: 1.1;
+  color: rgba($base-color, 0.15);
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media (max-width: $mobile){
+    font-size: 4.3rem;
+
+  }
+
+}
+
+.aboutme__text {
+  //padding: 0 1rem;
+  margin-bottom: 2.8rem;
+  font-size: 0.8rem;
+  line-height: 2;
+  color: $gray;
+  font-weight: 300;
+
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+
+
+    strong {
+      color: $base-color;
+      font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Порт - Фолио</title>
+    <link href="css/base.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;700;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-clale=1">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+
+            <div class="user">
+                <div class="user__avatar">
+                    <img src="images/me.jpeg" alt="" width="57">
+                </div>
+                <div class="user__content">
+                    <div class="user__name">Гречка<br>Константин</div>
+                    <div class="user__prof">Fullstack web developer</div>
+                </div>
+            </div>
+            <nav class="nav" id="nav">
+
+                <a class="nav__link active" href="#works">Работы</a>
+                <a class="nav__link" href="#about">Обо мне</a>
+                <a class="nav__link" href="#news">Новости</a>
+                <a class="nav__link" href="#reviews">Отзывы</a>
+                <a class="nav__link nav__link_btn" href="#" data-modal="#modal_hire_me">связаться</a>
+
+            </nav>
+
+            <button class="burger" type="button" id="navToggle">
+
+                <div class="burger_icon">
+                    <img src="images/menu.svg">
+                </div>
+            </button>
+
+        </div>
+    </div>
+</header>
+
+<section class="intro">
+    <div class="container">
+        <div class="intro__inner">
+            <div class="intro__content">
+                <h2 class="intro__subtitle">Здравствуйте, меня зовут</h2>
+                <h1 class="intro__title">Гречка Константин</h1>
+                <div class="intro__prof">Fullstack web programmer</div>
+
+                <div class="social">
+
+                    <a class="social__link" href="#" target="_blank">
+                        <img src="images/Be.png" alt="">
+                    </a>
+                    <a class="social__link" href="#" target="_blank">
+                        <img src="images/Dribbble.png" alt="">
+                    </a>
+                    <a class="social__link" href="#" target="_blank">
+                        <img src="images/In.png" alt="">
+                    </a>
+
+                    <a class="social__link" href="#" target="_blank">
+                        <img src="images/Fb.png" alt="">
+                    </a>
+                    <a class="social__link" href="https://www.instagram.com/hierophant_7/" target="_blank">
+                        <img src="images/Instagram.png" alt="">
+                    </a>
+                    <a class="social__link" href="https://twitter.com/ithekozub" target="_blank">
+                        <img src="images/Twitter.png" alt="">
+                    </a>
+                </div>
+
+                <a class="btn" href="#" data-modal="#modal_hire_me">связаться</a>
+                <button class="btn" type="button" data-modal="#modal_resume">резюме</button>
+            </div>
+
+            <img class="intro__photo" src="images/777.png">
+        </div><!-- /.intro__inner -->
+    </div><!-- /.container -->
+</section>
+<!-- Works -->
+<div class="works" id="works">
+    <div class="container">
+        <div class="works__nav">
+            <a class="works__nav_link" href="#" data-filter="all">Все</a>
+            <a class="works__nav_link" href="#" data-filter="app">Приложения</a>
+            <a class="works__nav_link" href="#" data-filter="website">Сайты</a>
+            <a class="works__nav_link" href="#" data-filter="interactive">Интерактив</a>
+        </div>
+
+        <div class="portfolio">
+            <div class="portfolio__col" data-cat="app">
+                <div class="work" data-modal="#modal_project_1">
+                    <img class="work__image" src="images/777.jpg">
+                    <div class="work__content">
+                        <div class="work__cat">категория: приложения</div>
+                        <div class="work__title">
+                            Крестики нолили
+                            <time class="work__date" datetime="2021-12-12">2021</time>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="portfolio__col" data-cat="app">
+                <div class="work" data-modal="#modal_project_2">
+                    <img class="work__image" src="https://snipp.ru/uploads/view/d880306f44d95f58d3a955e22d3ae165.png">
+                    <div class="work__content">
+                        <div class="work__cat">категория: приложения</div>
+                        <div class="work__title">
+                            Чат бот телеграмм
+                            <time class="work__date" datetime="2021-12-12">2021</time>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="portfolio__col" data-cat="website">
+                <div class="work" data-modal="#modal_project_3">
+                    <img class="work__image" src="images/s.png">
+                    <div class="work__content">
+                        <div class="work__cat">категория: сайты</div>
+                        <div class="work__title">
+                            Портфолио
+                            <time class="work__date" datetime="2022-02-11">2022</time>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="portfolio__col" data-cat="website">
+                <div class="work" data-modal="#modal_project_4">
+                    <img class="work__image" src="images/board.jpg">
+                    <div class="work__content">
+                        <div class="work__cat">категория: сайты</div>
+                        <div class="work__title">
+                            Доска объявлений
+                            <time class="work__date" datetime="2021-08-12">2021</time>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center">
+            <a class="btn btn_sm" href="#">загрузить больше</a>
+        </div>
+
+    </div>
+
+</div><!-- /Works -->
+
+<section class="aboutme" id="about"> <!-- Aboutme -->
+    <div class="container">
+        <div class="aboutme__inner">
+            <div class="aboutme__photo">
+                <img class="img" src="images/photo_selfi.png">
+            </div>
+            <div class="aboutme__content">
+                <h3 class="aboutme__title">обо мне</h3>
+                <h2 class="aboutme__bigtitle">кто я</h2>
+                <div class="aboutme__text">
+                    <p>Здравствуйте. Меня зовут <strong>Константин Гречка.</strong> Я fullstack разработчик на Python и JS. Фулстак это работа с серверной и клиентской частями одновременно. Простыми словами на сервере обрабатываются данные, а на клиенте данные отображаются. Я могу работать и с тем и стем. Такой себе человек оркестр, в мире веб программирования)</P>
+                    <P>Но это далеко не полный список инструментов в моем личном оркестре. Дело в том, что в разработку я пришел из онлан продаж. Именно по этому коммуникативные навыки у меня на высоком уровне. Кроме того, не по наслышке знаю что такое маркетинг, продающий дизайн, таргетированная реклама и тд и тп</P>
+                    <P>А еще когда то я работал на стройке... Так что могу в одно лицо построить дом, продать его через интернет, а для будующих жильцов дома разработать их собственную внутридомовую социальную сеть.</P>
+                    <P>Да, кстати у меня еще и с юмором все хорошо)</P>
+                    <h3>Вот такой я человек <strong><sup>оркестр<sup>2</sup></sup></strong>, fullstack разработчик, <strong>Константин Гречка</strong></h3>
+                </div>
+                <a class="btn" href="#" data-modal="#modal_hire_me">связаться</a>
+                <button class="btn" type="button" data-modal="#modal_resume">резюме</button>
+
+            </div>
+        </div><!-- /.aboutme__inner -->
+    </div><!-- /.container -->
+</section> <!-- /.Aboutme -->
+
+
+<!-- reviews -->
+<div class="reviews" id="reviews">
+    <div class="container">
+
+        <div class="reviews__item">
+            <div class="reviews__text">
+                <p>I know Konstantin very well. He is top expert in python, django, JS as well as html/css.</p>
+                <p>Konstantin is a very creative man!</p>
+                <p>Respect, man!!!</p>
+            </div>
+
+            <div class="reviews__author">
+                <img class="reviews__photo" src="images/elon.jpg" height="103">
+                <div class="reviews__name">Elon Mask</div>
+                <div class="reviews__company">Tesla</div>
+                <div class="reviews__rating">
+                    <img class="reviews__star" src="images/star-solid.svg">
+                    <img class="reviews__star" src="images/star-solid.svg">
+                    <img class="reviews__star" src="images/star-solid.svg">
+                    <img class="reviews__star" src="images/star-solid.svg">
+                    <img class="reviews__star" src="images/star-solid.svg">
+                    <img class="reviews__star" src="images/star-solid.svg">
+                    <img class="reviews__star" src="images/star-half-solid.svg" width="16" height="16">
+                </div>
+            </div>
+        </div><!-- /.reviews__item -->
+
+    </div><!-- /.container -->
+</div><!-- /.reviews -->
+<!-- News -->
+<section>
+    <div class="news" id="news">
+        <div class="container">
+
+
+            <div class="news__header">
+                <h3 class="news__title">Новости IT</h3>
+                <div class="news__text">Кое что интересное...</div>
+            </div>
+
+            <div class="articles">
+                <div class="articles__col">
+                    <div class="articles__item">
+                        <div class="articles__header">
+                            <time class="articles__date">10<br>февраля</time>
+                            <a href="https://habr.com/ru/news/t/650885/" target="_blank"><img class="articles__photo" src="https://habrastorage.org/getpro/habr/upload_files/6f7/697/664/6f769766472fd68af28398ff02914a14.jpg"></a>
+                        </div>
+                        <div class="articles__content">
+                            <h4 class="articles__title"><a href="https://habr.com/ru/news/t/650885/" target="_blank">Основатель приложения Coursicle внезапно начал рассылать пользователям странные уведомления и просить прислать «нюдсы»</a></h4>
+                            <div class="articles__cat">IT-компании</div>
+                            <div class="articles__text">
+                                <p>Как сообщает издание Vice, основатель приложения-календаря Coursicle Джо Пуччио внезапно начал массово рассылать пользователям push-уведомления со странным содержимым — «Время пришло. Сегодня Твиттер умрёт.», «Спасибо, что выслушал(а). Люблю тебя.», «Это конец. Я заткнусь, если ты откроешь приложение, выберешь нюдсы и будешь следовать инструкциям.» и не только. Необычные послания, порой с очень личным содержанием, также появились на сайте, в Instagram и в Twitter-аккаунте Coursicle.</p>
+                            </div>
+                        </div>
+                        <a class="btn btn_sm" href="https://habr.com/ru/news/t/650885/" target="_blank">дочитать</a>
+
+                    </div>
+
+
+                </div>
+                <div class="articles__col">
+                    <div class="articles__item">
+                        <div class="articles__header">
+                            <time class="articles__date">10<br>февраля</time>
+                            <a href="https://habr.com/ru/news/t/650901/" target="_blank"><img class="articles__photo" src="https://habrastorage.org/getpro/habr/upload_files/76f/786/2bc/76f7862bc7ec8b6656d6e005a4ce83ca.jpg"></a>
+                        </div>
+                        <div class="articles__content">
+                            <h4 class="articles__title"><a href="https://habr.com/ru/news/t/650901/" target="_blank">Число стартапов-единорогов с капитализацией больше $1 млрд превысило тысячу</a></h4>
+                            <div class="articles__cat">Финансы в IT</div>
+                            <div class="articles__text">
+                                <p>Согласно данным сервиса отслеживания стартапов CB Insights, в мире сегодня насчитывается 1000 стартапов-единорогов с капитализацией больше миллиарда долларов. Второго февраля в их число вошла компания Productboard, разрабатывающая решения для продакт-менеджмента.</p>
+                            </div>
+                        </div>
+                        <a class="btn btn_sm" href="https://habr.com/ru/news/t/650901/" target="_blank">дочитать</a>
+
+                    </div>
+
+
+                </div>
+                <div class="articles__col">
+                    <div class="articles__item">
+                        <div class="articles__header">
+                            <time class="articles__date">10<br>февраля</time>
+                            <a href="https://habr.com/ru/news/t/650865/"target="_blank"><img class="articles__photo" src="https://habrastorage.org/getpro/habr/upload_files/4c4/669/3f3/4c46693f330dfc82c4be2e38cd0bdd0b.jpg"></a>
+                        </div>
+                        <div class="articles__content">
+                            <h4 class="articles__title"><a href="https://habr.com/ru/news/t/650865/"target="_blank">Capcom выплатит $12 млн для мирного урегулирования иска об использовании нелицензионных изображений для игр</a></h4>
+                            <div class="articles__cat">категория</div>
+                            <div class="articles__text">
+                                <p>Японская корпорация Capcom согласилась выплатить компенсацию в размере $12 млн дизайнеру Джуди Юрачек. Летом прошлого года она подала в суд на компанию, обвинив Capcom в использовании без разрешения ее фотографий в играх Resident Evil 4 и Devil May Cry.</p>
+                            </div>
+                        </div>
+                        <a class="btn btn_sm" href="https://habr.com/ru/news/t/650865/" target="_blank">дочитать</a>
+
+                    </div>
+
+
+                </div>
+
+            </div><!-- /.articles -->
+            <div class="news__footer">
+                <a class="news__link" href="https://habr.com/ru/all/" target="_blank">Больше постов</a>
+            </div>
+
+        </div><!-- /.container -->
+
+    </div>
+</section><!-- /.News -->
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__credits">
+                <div class="footer__copyright">
+                    &copy; 2022 гречка
+                </div>
+                <div class="footer__social">
+                    <a href="#" target="_blank">
+                        <img src="images/Behance-gray.svg" width="38">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="images/Dribbble-gray.svg" width="24">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="images/Linkedin-gray.svg" width="28">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="images/Facebook-gray.svg" width="21">
+                    </a>
+                    <a href="https://www.instagram.com/hierophant_7/" target="_blank">
+                        <img src="images/Instagram-gray.svg" width="24">
+                    </a>
+                    <a href="https://twitter.com/ithekozub" target="_blank">
+                        <img src="images/Twitter-gray.svg" width="32">
+                    </a>
+
+                </div>
+            </div>
+            <nav class="footer__nav">
+                <a class="footer__nav_link" href="#works">Работы</a>
+                <a class="footer__nav_link" href="#about">Обо мне</a>
+                <a class="footer__nav_link" href="#news">Новости</a>
+                <a class="footer__nav_link" href="#reviews">Отзывы</a>
+                <a class="footer__nav_link footer__nav_link_btn" href="#" data-modal="#modal_hire_me">связаться</a>
+            </nav>
+        </div>
+
+    </div>
+
+</footer>
+<!-- Modals -->
+<div class="modal" id="modal_project_1">
+
+    <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+            <img src="images/close.svg" width="34">
+        </button>
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src="images/777.jpg">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="http://placehold.it/790x780/333">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">Крестики нолики</h3>
+                    <div class="modal-work__info">приложения<span class="modal-work__info_divider">|</span>2021
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">SkillFactory</div>
+                    <div class="modal-work__client-name">SkillFactory</div>
+
+                </div>
+
+                <div class="modal-work__text">
+                    <p>Это одно из домашних заданий от SkillFactory, которое задавали при  изучении python</p>
+                    <p>С кодом проекта можно ознаклмиться в моем <a href="https://github.com/ithekozub/SkillFactory/blob/master/TicTacToe.py" target="_blank">github репозитории.</a></p>
+                </div>
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn modal-work__btn_prev" type="button"><img src="images/l_arrow.svg"
+                                                                                            height="18">Предыдущая
+                    </button>
+                    <button class="modal-work__btn modal-work__btn_next" type="button">Следующая<img
+                            src="images/r_arrow.svg" height="18"></button>
+                </div>
+
+
+            </div>
+        </div><!-- /.modal-work -->
+    </div><!-- /.modal__dialog -->
+
+</div>
+
+<div class="modal" id="modal_project_2">
+
+    <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+            <img src="images/close.svg" width="34">
+        </button>
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src="https://snipp.ru/uploads/view/d880306f44d95f58d3a955e22d3ae165.png">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="http://placehold.it/790x780/333">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">Чат бот телеграмм</h3>
+                    <div class="modal-work__info">приложения<span class="modal-work__info_divider">|</span>2021
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">SkillFactory</div>
+                    <div class="modal-work__client-name">SkillFactory</div>
+
+                </div>
+
+                <div class="modal-work__text">
+                    <p>Это одно из домашних заданий от SkillFactory, которое задавали при  изучении python</p>
+                    <p>С кодом проекта можно ознаклмиться в моем <a href="https://github.com/ithekozub/telegram_bot" target="_blank">github репозитории.</a></p>
+                </div>
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn modal-work__btn_prev" type="button"><img src="images/l_arrow.svg"
+                                                                                            height="18">Предыдущая
+                    </button>
+                    <button class="modal-work__btn modal-work__btn_next" type="button">Следующая<img
+                            src="images/r_arrow.svg" height="18"></button>
+                </div>
+
+
+            </div>
+        </div><!-- /.modal-work -->
+    </div><!-- /.modal__dialog -->
+
+</div>
+
+<div class="modal" id="modal_project_3">
+
+    <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+            <img src="images/close.svg" width="34">
+        </button>
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src="https://natworld.info/wp-content/uploads/2020/04/poberezhe-morya.jpg">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="http://placehold.it/790x780/333">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">Сайт Портфолио</h3>
+                    <div class="modal-work__info">сайты<span class="modal-work__info_divider">|</span>2022
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">SkillFactory</div>
+                    <div class="modal-work__client-name">SkillFactory</div>
+
+                </div>
+
+                <div class="modal-work__text">
+                    <p>Данный сайт портфолио является одним из заданий от SkillFactoy</p>
+                    <p>С моей работой можете ознакомиться на страницах данного <a href="#" target="_blank">сайта</a></p>
+                </div>
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn modal-work__btn_prev" type="button"><img src="images/l_arrow.svg"
+                                                                                            height="18">Предыдущая
+                    </button>
+                    <button class="modal-work__btn modal-work__btn_next" type="button">Следующая<img
+                            src="images/r_arrow.svg" height="18"></button>
+                </div>
+
+
+            </div>
+        </div><!-- /.modal-work -->
+    </div><!-- /.modal__dialog -->
+
+</div>
+
+<div class="modal" id="modal_project_4">
+
+    <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+            <img src="images/close.svg" width="34">
+        </button>
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src="images/board.jpg">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="http://placehold.it/790x780/333">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">Доска объявлений</h3>
+                    <div class="modal-work__info">сайты<span class="modal-work__info_divider">|</span>2021
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">SkillFactory</div>
+                    <div class="modal-work__client-name">SkillFactory</div>
+
+                </div>
+
+                <div class="modal-work__text">
+                    <p>Это одно из домашних заданий от SkillFactory, которое задавали при  изучении Django</p>
+                    <p>Полнофункциональный вебсайт доска объявлений, с регистрацией, отправкой емаил уведомлений и другим функционалом.</p>
+                    <p>С кодом проекта можно ознаклмиться в моем <a href="https://github.com/ithekozub/DjangoFinal" target="_blank">github репозитории.</a></p>
+                </div>
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn modal-work__btn_prev" type="button"><img src="images/l_arrow.svg"
+                                                                                            height="18">Предыдущая
+                    </button>
+                    <button class="modal-work__btn modal-work__btn_next" type="button">Следующая<img
+                            src="images/r_arrow.svg" height="18"></button>
+                </div>
+
+
+            </div>
+        </div><!-- /.modal-work -->
+    </div><!-- /.modal__dialog -->
+
+</div>
+
+<div class="modal" id="modal_resume">
+
+    <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+            <img src="images/close.svg" width="34">
+        </button>
+        <div class="modal__content">
+
+            <h3 class="modal__title text-center">резюме</h3>
+            <div class="text-center">
+                <a class="btn btn_thin" href="#">СКАЧАТЬ</a>
+                <a class="btn btn_thin" href="#">распечатать</a>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline__col timeline__col_left">
+                    <h4 class="timeline__title">опыт</h4>
+                    <div class="timeline__item">
+                        <time class="timeline__date">2017 - <b>Настоящее</b></time>
+                        <h5 class="timeline__subtitle">Фрилансер</h5>
+                        <div class="timeline__position">Арт директор</div>
+                        <div class="timeline__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur dolores
+                                dolorum ducimus error fugit harum illum inventore ipsa, ipsam nihil non, obcaecati
+                                quaerat quam, quia quisquam quod tenetur vel!</p>
+                        </div>
+
+                    </div>
+                    <div class="timeline__item">
+                        <time class="timeline__date">2017 - <b>Настоящее</b></time>
+                        <h5 class="timeline__subtitle">Фрилансер</h5>
+                        <div class="timeline__position">Арт директор</div>
+                        <div class="timeline__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur dolores
+                                dolorum ducimus error fugit harum illum inventore ipsa, ipsam nihil non, obcaecati
+                                quaerat quam, quia quisquam quod tenetur vel!</p>
+                        </div>
+
+                    </div>
+                    <div class="timeline__item">
+                        <time class="timeline__date">2017 - <b>Настоящее</b></time>
+                        <h5 class="timeline__subtitle">Фрилансер</h5>
+                        <div class="timeline__position">Арт директор</div>
+                        <div class="timeline__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur dolores
+                                dolorum ducimus error fugit harum illum inventore ipsa, ipsam nihil non, obcaecati
+                                quaerat quam, quia quisquam quod tenetur vel!</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="timeline__col timeline__col_right">
+                    <h4 class="timeline__title">образование</h4>
+                    <div class="timeline__item">
+                        <time class="timeline__date">2005 - 2010</time>
+                        <h5 class="timeline__subtitle">UI/UX Design</h5>
+                        <div class="timeline__position">LA University, USA</div>
+
+                    </div>
+                    <div class="timeline__item">
+                        <time class="timeline__date">2005 - 2010</time>
+                        <h5 class="timeline__subtitle">UI/UX Design</h5>
+                        <div class="timeline__position">LA University, USA</div>
+
+                    </div>
+                    <h4 class="timeline__title">навыки</h4>
+                    <div class="progress-bar">
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">UI/UX</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 70%">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">Python</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 97%">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">JavaScript</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 88%">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.progress-bar -->
+
+                    <h4 class="timeline__title">награды</h4>
+                    <div class="timeline__item">
+                        <time class="timeline__date">2017</time>
+
+                        <div class="timeline__position">Арт директор</div>
+                        <div class="timeline__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur dolores
+                                dolorum ducimus error fugit harum illum inventore ipsa, ipsam nihil non, obcaecati
+                                quaerat quam, quia quisquam quod tenetur vel!</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div><!-- /.timeline -->
+            <div class="text-center">
+                <a class="btn" href="#" data-modal="#modal_hire_me">связаться</a>
+            </div>
+
+
+        </div>
+
+    </div><!-- /.modal__dialog -->
+
+</div>
+
+<div class="modal" id="modal_hire_me">
+    <div class="modal__dialog modal__dialog_sm">
+        <button class="modal__close" type="button" data-close>
+            <img src="images/close.svg" width="34">
+        </button>
+
+        <div class="contact">
+            <div class="contact__left">
+                <h3 class="modal__title mb-0">Давайте пообщаемся</h3>
+                <h4 class="modal__subtitle">Позвоните мне или отправьте запрос</h4>
+                <ul class="contact__info">
+                    <li class="contact__info_item"><img class="contact__info_icon" src="images/phone.svg" width="12">
+                        +380 68 464 9972
+                    </li>
+
+                    <li class="contact__info_item">
+                        <img class="contact__info_icon" src="images/mail.svg" width="12"> konstantin@gmail.com
+                    </li>
+                </ul>
+
+                <form class="form" action="/" method="post">
+                    <div class="form__group">
+                        <label class="form__label" for="input-email">Адрес e-mail</label>
+                        <input class="form__input" type="text" id="input-email" placeholder="Адрес e-mail">
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="input-text">Ваш запрос</label>
+                        <textarea class="form__textarea" name="input-text" id="input-text"
+                                  placeholder="Напишите Ваш запрос">
+
+                            </textarea>
+                    </div>
+                    <div class="text-right">
+                        <button class="btn" type="submit">ОТПРАВИТЬ</button>
+                    </div>
+
+                </form>
+            </div>
+            <div class="contact__right"></div>
+        </div>
+
+
+    </div><!-- /.modal__dialog -->
+</div>
+
+<!-- JS -->
+<script src="js/slick.min.js"></script>
+<script src="js/app.js"></script>
+
+
+</body>
+
+
+</html>

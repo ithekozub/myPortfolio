@@ -1,0 +1,143 @@
+.modal-work {
+  display: flex;
+  @media (max-width: $mobile){
+    flex-wrap: wrap;
+
+  }
+
+}
+
+.modal-work__preview {
+  width: 65%;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: $tablet){
+    width: 55%;
+  }
+
+  @media (max-width: $mobile){
+    width: 790px;
+    height: 342px;
+    //overflow: visible;
+  }
+}
+
+.modal-work__photo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+
+  transform: translate3d(-50%, -50%, 0);
+
+  @media (max-width: $mobile){
+    position: relative;
+    //max-height: 43vh;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 50%;
+
+    //transform: translate3d(0, 0, 0);
+  }
+
+
+}
+
+.modal-work__content {
+  width: 35%;
+  padding: 3.4rem 6.6rem 1rem 1.73rem;
+  position: relative;
+
+  @media (max-width: $tablet){
+    width: 45%;
+    padding: 3rem 6rem 1rem 1.73rem;
+  }
+
+  @media (max-width: $mobile){
+    width: 100%;
+    padding: 3rem 1.73rem 1rem 1.73rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: $base-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.modal-work__header {
+  margin-bottom: 2.2rem;
+}
+
+.modal-work__title {
+  margin-bottom: 0.2rem;
+  font-size: 2.12rem;
+  font-weight: 700;
+  color: $base-color;
+  text-transform: uppercase;
+
+  @media (max-width: $mobile){
+    font-size: 2rem;
+
+  }
+}
+
+.modal-work__info_divider{
+  margin: 0 1rem;
+
+}
+.modal-work__info {
+  font-size: 1.2rem;
+  color: $gray;
+  text-transform: uppercase;
+
+  @media (max-width: $mobile){
+    font-size: 1rem;
+
+  }
+}
+
+.modal-work__client {
+  margin-bottom: 2.2rem;
+}
+.modal-work__client-title{
+  margin-bottom: 0.2rem;
+  font-size: 1.06rem;
+  font-weight: 700;
+  color: $base-color;
+
+  @media (max-width: $mobile){
+    font-size: 0.98rem;
+
+  }
+}
+
+.modal-work__client-name {
+  font-size: 0.94rem;
+  font-style: italic;
+  color: $gray;
+  font-weight: 300;
+
+  @media (max-width: $mobile){
+    font-size: 0.9rem;
+
+  }
+}
+
+.modal-work__text {
+  margin-bottom: 8.66rem;
+  font-size: 0.8rem;
+  line-height: 2;
+  color: $gray;
+  font-weight: 300;
+
+  @media (max-width: $mobile){
+    font-size: 0.7rem;
+
+  }
+}

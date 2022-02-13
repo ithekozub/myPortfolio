@@ -1,0 +1,95 @@
+.intro {
+  @media (max-width: $mobile){
+    margin-top: 6.67rem;
+
+  }
+}
+
+.intro__inner {
+  display: flex;
+  border-bottom: 1px solid rgba($gray, 0.3);
+  padding-top: 6.67rem;
+  padding-bottom: 8rem;
+  position: relative;
+
+  background: url("../images/symbols.png") right bottom no-repeat;
+
+  @media (max-width: $tablet){
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-size: 400px auto;
+
+    background-position: bottom 0 right 30px;
+  }
+
+  @media (max-width: $mobile){
+    background-position: bottom 0 right -50px;
+  }
+}
+
+.intro__content {
+  width: 50%;
+
+  @media (max-width: $mobile){
+    width: 70%;
+  }
+
+  @media (max-width: $mobile_sm){
+    width: 100%;
+  }
+}
+
+.intro__subtitle {
+  font-size: 2.13rem;
+  color: $base-color;
+  font-weight: 200;
+
+
+  @media (max-width: $tablet){
+    font-size: 1.6rem;
+  }
+
+
+}
+
+.intro__title {
+  font-size: 3rem;
+  color: $base-color;
+  font-weight: 700;
+  margin-bottom: 5px;
+
+  @media (max-width: $tablet){
+    font-size: 2.27rem;
+  }
+}
+
+.intro__prof {
+  font-size: 1.2rem;
+  color: $base-color-07;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+
+.intro__photo {
+  position: absolute;
+  width: 270px;
+  bottom: -1px;
+  right: 88px;
+  z-index: 1;
+
+  @media (max-width: $tablet){
+    width: 260px;
+
+  }
+
+  @media (max-width: $mobile){
+    right: -7px;
+    //width: 270px;
+
+  }
+
+  @media (max-width: $mobile_sm){
+    display: none;
+  }
+}
